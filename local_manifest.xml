@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="gh" 
+          fetch="git://github.com/" />
+  <remote name="linaro"
+          fetch="git://android.git.linaro.org" />
+  <remote name="eos"
+          fetch="git://git.teameos.org/" />
+  <remote  name="cmdev"
+           fetch="git://github.com/loosethisskin/" />
+  <remote  name="ub"
+           fetch="git://github.com/UnicornButter/" />
+  <remote  name="ls"
+           fetch="git://github.com/LiquidSmooth/" />
+
+  <!-- <remove-project name="device/asus/grouper" />
+  <remove-project name="device/lge/mako" />
+  <remove-project name="device/samsung/maguro" />
+  <remove-project name="device/samsung/toro" />
+  <remove-project name="device/samsung/toroplus" />
+  <remove-project name="device/samsung/tuna" />
+  <remove-project name="device/ti/panda" /> -->
+  <remove-project name="platform/build" />
+  <remove-project name="platform/bionic" />
+  <remove-project name="platform/external/oprofile" />
+  <remove-project name="platform/external/elfutils" />
+  <remove-project name="platform/external/ppp" />
+  <!-- <remove-project name="platform/external/quake" /> -->
+  <remove-project name="platform/external/v8" />
+  <remove-project name="platform/external/sepolicy" />
+  <remove-project name="platform/frameworks/av" />
+  <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/frameworks/native" />
+  <remove-project name="platform/frameworks/opt/telephony" />
+  <remove-project name="platform/frameworks/rs" />
+  <remove-project name="platform/hardware/libhardware" />
+  <remove-project name="platform/hardware/libhardware_legacy" />
+  <!-- <remove-project name="platform/hardware/qcom/audio" />
+  <remove-project name="platform/hardware/qcom/camera" />
+  <remove-project name="platform/hardware/qcom/display" />
+  <remove-project name="platform/hardware/qcom/media" />
+  <remove-project name="platform/hardware/qcom/power" />
+  <remove-project name="platform/hardware/ti/omap4xxx" />
+  <remove-project name="platform/hardware/ti/wlan" />
+  <remove-project name="platform/hardware/ti/wpan" />
+  <remove-project name="platform/packages/apps/Nfc" /> -->
+  <remove-project name="platform/packages/apps/Calendar" />
+  <remove-project name="platform/packages/apps/Contacts" />
+  <remove-project name="platform/packages/apps/DeskClock" />
+  <remove-project name="platform/packages/apps/Email" />
+  <remove-project name="platform/packages/apps/Exchange" />
+  <remove-project name="platform/packages/apps/Launcher2" />
+  <remove-project name="platform/packages/apps/Mms" />
+  <remove-project name="platform/packages/apps/Music" />
+  <remove-project name="platform/packages/apps/Protips" />
+  <remove-project name="platform/packages/apps/QuickSearchBox" />
+  <remove-project name="platform/packages/apps/Phone" />
+  <remove-project name="platform/packages/apps/Settings" />
+  <remove-project name="platform/packages/inputmethods/LatinIME" />
+  <remove-project name="platform/packages/providers/CalendarProvider" />
+  <remove-project name="platform/system/core" />
+  <remove-project name="platform/system/extras" />
+  <remove-project name="platform/system/security" />
+  <remove-project name="platform/system/vold" />
+
+  <!-- AOSP replacements -->
+  <project path="build" name="ExtinctionLevelEvent/android_build" remote="gh" revision="ele">
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  <project path="bionic" name="ExtinctionLevelEvent/android_bionic" remote="gh" revision="ele" />
+  <project path="external/oprofile" name="platform/external/oprofile" revision="master" />
+  <project path="external/elfutils" name="android_external_elfutils" remote="cmdev" revision="cm-10.1-linaro" />
+  <project path="external/ppp" name="platform/external/ppp" revision="master" />
+  <!-- <project path="external/quake" name="platform/external/quake" remote="linaro" revision="linaro_android_4.2.1" /> -->
+  <project path="external/v8" name="external_v8" remote="ub" revision="jb-mr1" />
+  <project path="external/sepolicy" name="platform/external/sepolicy" revision="master" />
+  <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" remote="gh" revision="cm-10.1" />
+  <project path="frameworks/base" name="ExtinctionLevelEvent/platform_frameworks_base" remote="gh" revision="ele" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="ls" revision="jb2" />
+  <project path="frameworks/opt/telephony" name="ExtinctionLevelEvent/android_frameworks_opt_telephony" remote="gh" revision="ele" />
+  <project path="frameworks/rs" name="frameworks_rs" remote="ls" revision="jb2" />
+  <project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" remote="gh" revision="cm-10.1" />
+  <project path="hardware/libhardware_legacy" name="CyanogenMod/android_hardware_libhardware_legacy" remote="gh" revision="cm-10.1" />
+  <project path="hardware/ti/omap4xxx" name="CyanogenMod/android_hardware_ti_omap4xxx" remote="gh" revision="cm-10.1" />
+  <project path="hardware/ti/wlan" name="CyanogenMod/android_hardware_ti_wlan" remote="gh" revision="cm-10.1" />
+  <project path="hardware/ti/wpan" name="CyanogenMod/android_hardware_ti_wpan" remote="gh" revision="cm-10.1" />
+  <project path="packages/apps/PerformanceControl" name="ExtinctionLevelEvent/PerformanceControl" remote="gh" revision="ele" />
+  <!-- <project path="packages/apps/Nfc" name="CyanogenMod/android_packages_apps_Nfc" remote="gh" revision="cm-10.1" /> -->
+  <project path="packages/apps/Contacts" name="ExtinctionLevelEvent/android_packages_apps_Contacts" remote="gh" revision="ele" />
+  <project path="packages/apps/Mms" name="ExtinctionLevelEvent/android_packages_apps_Mms" remote="gh" revision="ele" />
+  <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="ls" revision="jb2" />
+  <project path="packages/apps/LockClock" name="ExtinctionLevelEvent/packages_apps_LockClock" remote="gh" revision="ele" />
+  <project path="packages/apps/Phone" name="ExtinctionLevelEvent/platform_packages_apps_phone" remote="gh" revision="ele" />
+  <project path="packages/apps/Settings" name="ExtinctionLevelEvent/platform_packages_apps_settings" remote="gh" revision="ele" />
+  <project path="packages/apps/ELELauncher" name="ExtinctionLevelEvent/android_packages_apps_elelauncher" remote="gh" revision="ele" />
+  <project path="packages/inputmethods/LatinIME" name="ExtinctionLevelEvent/android_packages_inputmethods_LatinIME" remote="gh" revision="ele" />
+  <project path="system/core" name="ExtinctionLevelEvent/platform_system_core" remote="gh" revision="ele" />
+  <project path="system/extras" name="ExtinctionLevelEvent/platform_system_extras" remote="gh" revision="ele" />
+  <project path="system/security" name="system_security" remote="ub" revision="jb-mr1" />
+  <project path="system/vold" name="eos/platform/system/vold" remote="eos" revision="jellybean-4.2" />
+  
+  <!-- local misc -->
+  <project path="packages/apps/Torch" name="CyanogenMod/android_packages_apps_Torch" remote="gh" revision="cm-10.1" />
+  <!-- <project path="packages/apps/Superuser" name="CyanogenMod/android_packages_apps_Superuser" remote="gh" revision="cm-10.1" />
+  <project path="system/su" name="CyanogenMod/android_system_su" remote="gh" revision="cm-10.1" /> -->
+  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="gh" revision="cm-10.1" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" groups="linux,arm" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" groups="linux,arm" revision="master" />
+  <project path="vendor/qcom/opensource/v8" name="CyanogenMod/android_vendor_qcom_opensource_v8" remote="gh" revision="cm-10.1" />
+
+  <!-- local device/vendor/kernel -->
+  <project path="device/lge/mako" name="ExtinctionLevelEvent/android_device_lge_mako" remote="gh" revision="ele" />
+  <project path="kernel/lge/mako-linaro" name="trailblazerz/lge-kernel-mako" remote="gh" revision="linaro-10.1" />
+  <project path="vendor/lge/mako" name="ExtinctionLevelEvent/android_vendor_lge_mako" remote="gh" revision="ele" />
+  <project path="vendor/broadcom" name="TheMuppets/proprietary_vendor_broadcom" remote="gh" revision="cm-10.1" />
+  <project path="vendor/elan" name="TheMuppets/proprietary_vendor_elan" remote="gh" revision="cm-10.1" />
+  <project path="vendor/invensense" name="TheMuppets/proprietary_vendor_invensense" remote="gh" revision="cm-10.1" />
+  <project path="vendor/nxp" name="TheMuppets/proprietary_vendor_nxp" remote="gh" revision="cm-10.1" />
+  <project path="vendor/widevine" name="TheMuppets/proprietary_vendor_widevine" remote="gh" revision="cm-10.1" />
+  <project path="vendor/imgtec" name="TheMuppets/proprietary_vendor_imgtec" remote="gh" revision="cm-10.1" />
+  <project path="vendor/event/ele" name="ExtinctionLevelEvent/vendor_event_ele" remote="gh" revision="ele" />
+  <project path="vendor/google/ele" name="ExtinctionLevelEvent/vendor_google_ele" remote="gh" revision="ele" />
+  <project path="external/qrngd" name="CyanogenMod/android_external_qrngd" remote="gh" revision="cm-10.1" />
+  <project path="hardware/qcom/audio" name="CyanogenMod/android_hardware_qcom_audio" remote="gh" revision="cm-10.1" />
+  <project path="hardware/qcom/audio-caf" name="CyanogenMod/android_hardware_qcom_audio-caf" remote="gh" revision="cm-10.1" />
+  <project path="hardware/qcom/bt" name="CyanogenMod/android_hardware_qcom_bt" remote="gh" revision="cm-10.1" />
+  <project path="hardware/qcom/camera" name="CyanogenMod/android_hardware_qcom_camera" remote="gh" revision="cm-10.1" />
+  <project path="hardware/qcom/display" name="CyanogenMod/android_hardware_qcom_display" remote="gh" revision="cm-10.1" />
+  <project path="hardware/qcom/display-caf" name="CyanogenMod/android_hardware_qcom_display-caf" remote="gh" revision="cm-10.1" />
+  <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" remote="gh" revision="cm-10.1" />
+  <project path="hardware/qcom/keymaster" name="CyanogenMod/android_hardware_qcom_keymaster" remote="gh" revision="cm-10.1" />
+  <project path="hardware/qcom/media" name="CyanogenMod/android_hardware_qcom_media" remote="gh" revision="cm-10.1" />
+  <project path="hardware/qcom/msm8960" name="CyanogenMod/android_hardware_qcom_msm8960" remote="gh" revision="cm-10.1" />
+  <project path="hardware/qcom/power" name="CyanogenMod/android_hardware_qcom_power" remote="gh" revision="cm-10.1" />
+  <project path="hardware/qcom/sensors" name="CyanogenMod/android_hardware_qcom_sensors" remote="gh" revision="cm-10.1" />
+  <project path="hardware/qcom/wlan" name="CyanogenMod/android_hardware_qcom_wlan" remote="gh" revision="cm-10.1" />
+  <!-- <project path="hardware/qcom/display" name="ExtinctionLevelEvent/android_hardware_qcom_display" remote="gh" revision="ele" /> -->
+  <project path="hardware/broadcom/wlan" name="CyanogenMod/android_hardware_broadcom_wlan" remote="gh" revision="cm-10.1" />
+  <project path="hardware/invensense" name="CyanogenMod/android_hardware_invensense" remote="gh" revision="cm-10.1" />
+  <!-- Themes -->
+  <project path="vendor/tmobile/apps/ThemeChooser" name="ExtinctionLevelEvent/themes-platform-vendor-tmobile-apps-ThemeChooser" remote="gh" revision="ele" />
+  <project path="vendor/tmobile/libs/com.tmobile.themes" name="eos/platform/vendor/tmobile/libs/com.tmobile.themes" remote="eos" revision="jellybean-4.2" />
+  <project path="vendor/tmobile/providers/ThemeManager" name="ExtinctionLevelEvent/android_vendor_tmobile_providers_ThemeManager" remote="gh" revision="ele" />
+  <project path="vendor/tmobile/products/themes" name="CyanogenMod/android_vendor_tmobile_products_themes" remote="gh" revision="cm-10.1" />
+</manifest>
