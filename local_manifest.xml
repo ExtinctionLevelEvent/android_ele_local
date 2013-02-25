@@ -3,10 +3,16 @@
 
   <remote name="gh" 
           fetch="git://github.com/" />
+  <remote  name="cr"
+           fetch="git://github.com/CarbonDev/" />
   <remote name="linaro"
           fetch="git://android.git.linaro.org" />
   <remote name="eos"
           fetch="git://git.teameos.org/" />
+  <remote name="omapzoom"
+          fetch="git://git.omapzoom.org/" />
+  <remote  name="cm"
+           fetch="git://github.com/CyanogenMod/" />
   <remote  name="cmdev"
            fetch="git://github.com/loosethisskin/" />
   <remote  name="ub"
@@ -68,40 +74,41 @@
   <project path="build" name="ExtinctionLevelEvent/android_build" remote="gh" revision="ele">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="bionic" name="ExtinctionLevelEvent/android_bionic" remote="gh" revision="ele" />
+  <project path="bionic" name="DroidTh3ory/android_bionic" remote="gh" revision="killrom" />
   <project path="external/oprofile" name="platform/external/oprofile" revision="master" />
   <project path="external/elfutils" name="android_external_elfutils" remote="cmdev" revision="cm-10.1-linaro" />
   <project path="external/ppp" name="platform/external/ppp" revision="master" />
   <!-- <project path="external/quake" name="platform/external/quake" remote="linaro" revision="linaro_android_4.2.1" /> -->
   <project path="external/v8" name="external_v8" remote="ub" revision="jb-mr1" />
   <project path="external/sepolicy" name="platform/external/sepolicy" revision="master" />
-  <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" remote="gh" revision="cm-10.1" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="cmdev" revision="cm-10.1-linaro" />
   <project path="frameworks/base" name="ExtinctionLevelEvent/platform_frameworks_base" remote="gh" revision="ele" />
-  <project path="frameworks/native" name="android_frameworks_native" remote="ls" revision="jb2" />
-  <project path="frameworks/opt/telephony" name="ExtinctionLevelEvent/android_frameworks_opt_telephony" remote="gh" revision="ele" />
-  <project path="frameworks/rs" name="frameworks_rs" remote="ls" revision="jb2" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="cmdev" revision="cm-10.1-linaro" />
+  <project path="frameworks/opt/telephony" name="DroidTh3ory/android_frameworks_opt_telephony" remote="gh" revision="killrom" />
+  <project path="frameworks/rs" name="android_frameworks_rs" remote="cmdev" revision="cm-10.1-linaro" />
   <project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" remote="gh" revision="cm-10.1" />
   <project path="hardware/libhardware_legacy" name="CyanogenMod/android_hardware_libhardware_legacy" remote="gh" revision="cm-10.1" />
   <project path="hardware/ti/omap4xxx" name="CyanogenMod/android_hardware_ti_omap4xxx" remote="gh" revision="cm-10.1" />
   <project path="hardware/ti/wlan" name="CyanogenMod/android_hardware_ti_wlan" remote="gh" revision="cm-10.1" />
   <project path="hardware/ti/wpan" name="CyanogenMod/android_hardware_ti_wpan" remote="gh" revision="cm-10.1" />
-  <project path="packages/apps/PerformanceControl" name="ExtinctionLevelEvent/PerformanceControl" remote="gh" revision="ele" />
+  <project path="packages/apps/PerformanceControl" name="DroidTh3ory/PerformanceControl" remote="gh" revision="killrom" />
   <!-- <project path="packages/apps/Nfc" name="CyanogenMod/android_packages_apps_Nfc" remote="gh" revision="cm-10.1" /> -->
   <project path="packages/apps/Contacts" name="ExtinctionLevelEvent/android_packages_apps_Contacts" remote="gh" revision="ele" />
   <project path="packages/apps/Mms" name="ExtinctionLevelEvent/android_packages_apps_Mms" remote="gh" revision="ele" />
-  <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="ls" revision="jb2" />
+  <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="cm" revision="cm-10.1" />
   <project path="packages/apps/LockClock" name="ExtinctionLevelEvent/packages_apps_LockClock" remote="gh" revision="ele" />
   <project path="packages/apps/Phone" name="ExtinctionLevelEvent/platform_packages_apps_phone" remote="gh" revision="ele" />
   <project path="packages/apps/Settings" name="ExtinctionLevelEvent/platform_packages_apps_settings" remote="gh" revision="ele" />
   <project path="packages/apps/ELELauncher" name="ExtinctionLevelEvent/android_packages_apps_elelauncher" remote="gh" revision="ele" />
   <project path="packages/inputmethods/LatinIME" name="ExtinctionLevelEvent/android_packages_inputmethods_LatinIME" remote="gh" revision="ele" />
-  <project path="system/core" name="ExtinctionLevelEvent/platform_system_core" remote="gh" revision="ele" />
-  <project path="system/extras" name="ExtinctionLevelEvent/platform_system_extras" remote="gh" revision="ele" />
+  <project path="system/core" name="DroidTh3ory/platform_system_core" remote="gh" revision="killrom" />
+  <project path="system/extras" name="DroidTh3ory/platform_system_extras" remote="gh" revision="killrom" />
   <project path="system/security" name="system_security" remote="ub" revision="jb-mr1" />
   <project path="system/vold" name="eos/platform/system/vold" remote="eos" revision="jellybean-4.2" />
   
   <!-- local misc -->
   <project path="packages/apps/Torch" name="CyanogenMod/android_packages_apps_Torch" remote="gh" revision="cm-10.1" />
+  <project path="packages/apps/DSPManager" name="CyanogenMod/android_packages_apps_DSPManager" remote="gh" revision="cm-10.1" />
   <!-- <project path="packages/apps/Superuser" name="CyanogenMod/android_packages_apps_Superuser" remote="gh" revision="cm-10.1" />
   <project path="system/su" name="CyanogenMod/android_system_su" remote="gh" revision="cm-10.1" /> -->
   <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="gh" revision="cm-10.1" />
@@ -121,6 +128,11 @@
   <project path="vendor/imgtec" name="TheMuppets/proprietary_vendor_imgtec" remote="gh" revision="cm-10.1" />
   <project path="vendor/event/ele" name="ExtinctionLevelEvent/vendor_event_ele" remote="gh" revision="ele" />
   <project path="vendor/google/ele" name="ExtinctionLevelEvent/vendor_google_ele" remote="gh" revision="ele" />
+  <project path="vendor/nvidia" name="eos/platform/vendor/nvidia" remote="eos" revision="jellybean-4.2" />
+
+  <!-- omapzoom projects -->
+  <project path="external/wpa_supplicant_8_ti" name="platform/external/wpa_supplicant_8_ti" remote="omapzoom" revision="p-jb-mr1-release" />
+
   <project path="external/qrngd" name="CyanogenMod/android_external_qrngd" remote="gh" revision="cm-10.1" />
   <project path="hardware/qcom/audio" name="CyanogenMod/android_hardware_qcom_audio" remote="gh" revision="cm-10.1" />
   <project path="hardware/qcom/audio-caf" name="CyanogenMod/android_hardware_qcom_audio-caf" remote="gh" revision="cm-10.1" />
@@ -135,12 +147,20 @@
   <project path="hardware/qcom/power" name="CyanogenMod/android_hardware_qcom_power" remote="gh" revision="cm-10.1" />
   <project path="hardware/qcom/sensors" name="CyanogenMod/android_hardware_qcom_sensors" remote="gh" revision="cm-10.1" />
   <project path="hardware/qcom/wlan" name="CyanogenMod/android_hardware_qcom_wlan" remote="gh" revision="cm-10.1" />
-  <!-- <project path="hardware/qcom/display" name="ExtinctionLevelEvent/android_hardware_qcom_display" remote="gh" revision="ele" /> -->
+  <!-- <project path="hardware/qcom/display" name="DroidTh3ory/android_hardware_qcom_display" remote="gh" revision="killrom" /> -->
+
   <project path="hardware/broadcom/wlan" name="CyanogenMod/android_hardware_broadcom_wlan" remote="gh" revision="cm-10.1" />
   <project path="hardware/invensense" name="CyanogenMod/android_hardware_invensense" remote="gh" revision="cm-10.1" />
+  <project path="external/iw" name="eos/platform/external/iw" remote="eos" revision="jellybean-4.2" />
+  <project path="external/iwmulticall" name="eos/platform/external/iwmulticall" remote="eos" revision="jellybean-4.2" />
+  <project path="external/libnl" name="eos/platform/external/libnl" remote="eos" revision="jellybean-4.2" />
+  <project path="external/ncurses" name="eos/platform/external/ncurses" remote="eos" revision="jellybean-4.2" />
+  <project path="external/ntfs-3g" name="eos/platform/external/ntfs-3g" remote="eos" revision="jellybean-4.2" />
+  <project path="external/powertop" name="eos/platform/external/powertop" remote="eos" revision="jellybean-4.2" />
+
   <!-- Themes -->
-  <project path="vendor/tmobile/apps/ThemeChooser" name="ExtinctionLevelEvent/themes-platform-vendor-tmobile-apps-ThemeChooser" remote="gh" revision="ele" />
+  <project path="vendor/tmobile/apps/ThemeChooser" name="DroidTh3ory/themes-platform-vendor-tmobile-apps-ThemeChooser" remote="gh" revision="killrom" />
   <project path="vendor/tmobile/libs/com.tmobile.themes" name="eos/platform/vendor/tmobile/libs/com.tmobile.themes" remote="eos" revision="jellybean-4.2" />
-  <project path="vendor/tmobile/providers/ThemeManager" name="ExtinctionLevelEvent/android_vendor_tmobile_providers_ThemeManager" remote="gh" revision="ele" />
+  <project path="vendor/tmobile/providers/ThemeManager" name="DroidTh3ory/android_vendor_tmobile_providers_ThemeManager" remote="gh" revision="killrom" />
   <project path="vendor/tmobile/products/themes" name="CyanogenMod/android_vendor_tmobile_products_themes" remote="gh" revision="cm-10.1" />
 </manifest>
