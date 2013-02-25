@@ -108,7 +108,7 @@
   
   <!-- local misc -->
   <project path="packages/apps/Torch" name="CyanogenMod/android_packages_apps_Torch" remote="gh" revision="cm-10.1" />
-  <project path="packages/apps/DSPManager" name="CyanogenMod/android_packages_apps_DSPManager" remote="gh" revision="cm-10.1" />
+  <project path="packages/apps/DSPManager" name="ExtinctionLevelEvent/android_packages_apps_DSPManager" remote="gh" revision="ele" />
   <!-- <project path="packages/apps/Superuser" name="CyanogenMod/android_packages_apps_Superuser" remote="gh" revision="cm-10.1" />
   <project path="system/su" name="CyanogenMod/android_system_su" remote="gh" revision="cm-10.1" /> -->
   <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="gh" revision="cm-10.1" />
