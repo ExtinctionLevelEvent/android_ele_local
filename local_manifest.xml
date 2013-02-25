@@ -75,7 +75,7 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="bionic" name="trailblazerz/android_bionic" remote="gh" revision="optimize" />
-  <project path="external/oprofile" name="platform/external/oprofile" revision="master" />
+  <project path="external/oprofile" name="android/external/oprofile" remote="cr" revision="jb2" />
   <project path="external/elfutils" name="android_external_elfutils" remote="cmdev" revision="cm-10.1-linaro" />
   <project path="external/ppp" name="platform/external/ppp" revision="master" />
   <!-- <project path="external/quake" name="platform/external/quake" remote="linaro" revision="linaro_android_4.2.1" /> -->
