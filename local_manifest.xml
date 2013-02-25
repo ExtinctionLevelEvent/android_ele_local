@@ -71,10 +71,10 @@
   <remove-project name="platform/system/vold" />
 
   <!-- AOSP replacements -->
-  <project path="build" name="ExtinctionLevelEvent/android_build" remote="gh" revision="ele">
+  <project path="build" name="trailblazerz/android_build" remote="gh" revision="linaro-10.1">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="bionic" name="DroidTh3ory/android_bionic" remote="gh" revision="killrom" />
+  <project path="bionic" name="trailblazerz/android_bionic" remote="gh" revision="optimize" />
   <project path="external/oprofile" name="platform/external/oprofile" revision="master" />
   <project path="external/elfutils" name="android_external_elfutils" remote="cmdev" revision="cm-10.1-linaro" />
   <project path="external/ppp" name="platform/external/ppp" revision="master" />
