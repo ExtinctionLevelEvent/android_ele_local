@@ -149,6 +149,15 @@
   <project path="hardware/qcom/wlan" name="CyanogenMod/android_hardware_qcom_wlan" remote="gh" revision="cm-10.1" />
   <!-- <project path="hardware/qcom/display" name="DroidTh3ory/android_hardware_qcom_display" remote="gh" revision="killrom" /> -->
 
+  <!-- note2 projects -->
+  <project path="device/samsung/t0lte" name="android_device_samsung_t0lte" remote="cr" revision="jb2" />
+  <project path="device/samsung/smdk4412-common" name="android_device_samsung_smdk4412-common" remote="cr" revision="jb2" />
+  <project path="kernel/samsung/smdk4412" name="android_kernel_samsung_smdk4412" remote="cr" revision="jb2" />
+  <project path="hardware/samsung_slsi/exynos5" name="android_hardware_samsung_slsi_exynos5" remote="cm" revision="cm-10.1" />
+  <project path="hardware/samsung" name="android_hardware_samsung" remote="cm" revision="cm-10.1" />
+  <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="cr" revision="jb2" />
+  
+  
   <project path="hardware/broadcom/wlan" name="CyanogenMod/android_hardware_broadcom_wlan" remote="gh" revision="cm-10.1" />
   <project path="hardware/invensense" name="CyanogenMod/android_hardware_invensense" remote="gh" revision="cm-10.1" />
   <project path="external/iw" name="eos/platform/external/iw" remote="eos" revision="jellybean-4.2" />
