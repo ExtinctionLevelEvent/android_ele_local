@@ -71,10 +71,10 @@
   <remove-project name="platform/system/vold" />
 
   <!-- AOSP replacements -->
-  <project path="build" name="trailblazerz/android_build" remote="gh" revision="linaro-10.1">
+  <project path="build" name="ExtinctionLevelEvent/android_build" remote="gh" revision="ele">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="bionic" name="trailblazerz/android_bionic" remote="gh" revision="optimize" />
+  <project path="bionic" name="DroidTh3ory/android_bionic" remote="gh" revision="killrom" />
   <project path="external/oprofile" name="platform/external/oprofile" revision="master" />
   <project path="external/elfutils" name="android_external_elfutils" remote="cmdev" revision="cm-10.1-linaro" />
   <project path="external/ppp" name="platform/external/ppp" revision="master" />
@@ -139,7 +139,7 @@
   <project path="hardware/qcom/bt" name="CyanogenMod/android_hardware_qcom_bt" remote="gh" revision="cm-10.1" />
   <project path="hardware/qcom/camera" name="CyanogenMod/android_hardware_qcom_camera" remote="gh" revision="cm-10.1" />
   <project path="hardware/qcom/display" name="CyanogenMod/android_hardware_qcom_display" remote="gh" revision="cm-10.1" />
-  <project path="hardware/qcom/display-caf" name="CarbonDev/android_hardware_qcom_display-caf" remote="gh" revision="jb2" />
+  <project path="hardware/qcom/display-caf" name="CyanogenMod/android_hardware_qcom_display-caf" remote="gh" revision="cm-10.1" />
   <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" remote="gh" revision="cm-10.1" />
   <project path="hardware/qcom/keymaster" name="CyanogenMod/android_hardware_qcom_keymaster" remote="gh" revision="cm-10.1" />
   <project path="hardware/qcom/media" name="CyanogenMod/android_hardware_qcom_media" remote="gh" revision="cm-10.1" />
