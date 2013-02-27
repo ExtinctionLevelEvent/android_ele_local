@@ -147,15 +147,21 @@
   <project path="hardware/qcom/power" name="CyanogenMod/android_hardware_qcom_power" remote="gh" revision="cm-10.1" />
   <project path="hardware/qcom/sensors" name="CyanogenMod/android_hardware_qcom_sensors" remote="gh" revision="cm-10.1" />
   <project path="hardware/qcom/wlan" name="CyanogenMod/android_hardware_qcom_wlan" remote="gh" revision="cm-10.1" />
-  <!-- <project path="hardware/qcom/display" name="DroidTh3ory/android_hardware_qcom_display" remote="gh" revision="killrom" /> -->
+  <project path="hardware/qcom/display" name="DroidTh3ory/android_hardware_qcom_display" remote="gh" revision="killrom" />
 
   <!-- note2 projects -->
-  <project path="device/samsung/t0lte" name="android_device_samsung_t0lte" remote="cr" revision="jb2" />
+  <project path="device/samsung/t0lte" name="ExtinctionLevelEvent/android_device_samsung_t0lte" remote="gh" revision="ele" />
   <project path="device/samsung/smdk4412-common" name="android_device_samsung_smdk4412-common" remote="cr" revision="jb2" />
   <project path="kernel/samsung/smdk4412" name="android_kernel_samsung_smdk4412" remote="cr" revision="jb2" />
   <project path="hardware/samsung_slsi/exynos5" name="android_hardware_samsung_slsi_exynos5" remote="cm" revision="cm-10.1" />
   <project path="hardware/samsung" name="android_hardware_samsung" remote="cm" revision="cm-10.1" />
   <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="cr" revision="jb2" />
+  
+<!-- toro projects -->
+  <project path="device/samsung/toro" name="ExtinctionLevelEvent/android_device_samsung_toro" remote="gh" revision="ele" />
+  <project path="device/samsung/tuna" name="ExtinctionLevelEvent/android_device_samsung_tuna" remote="gh" revision="ele" />
+  <project path="kernel/samsung/tuna" name="kernel/omap" remote="aosp" revision="android-omap-tuna-3.0-jb-mr1.1" />
+  <project path="kernel/samsung/tuna" name="CyanogenMod/android_kernel_samsung_tuna" remote="gh" revision="cm-10.1" />
   
   
   <project path="hardware/broadcom/wlan" name="CyanogenMod/android_hardware_broadcom_wlan" remote="gh" revision="cm-10.1" />
@@ -167,7 +173,8 @@
   <project path="external/ntfs-3g" name="eos/platform/external/ntfs-3g" remote="eos" revision="jellybean-4.2" />
   <project path="external/powertop" name="eos/platform/external/powertop" remote="eos" revision="jellybean-4.2" />
 
-  <!-- Themes -->
+  
+<!-- themes --> 
   <project path="vendor/tmobile/apps/ThemeChooser" name="DroidTh3ory/themes-platform-vendor-tmobile-apps-ThemeChooser" remote="gh" revision="killrom" />
   <project path="vendor/tmobile/libs/com.tmobile.themes" name="eos/platform/vendor/tmobile/libs/com.tmobile.themes" remote="eos" revision="jellybean-4.2" />
   <project path="vendor/tmobile/providers/ThemeManager" name="DroidTh3ory/android_vendor_tmobile_providers_ThemeManager" remote="gh" revision="killrom" />
