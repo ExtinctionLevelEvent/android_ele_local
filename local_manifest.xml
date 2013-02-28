@@ -74,7 +74,7 @@
   <project path="build" name="ExtinctionLevelEvent/android_build" remote="gh" revision="ele">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="bionic" name="DroidTh3ory/android_bionic" remote="gh" revision="killrom" />
+  <project path="bionic" name="android_bionic" remote="cr" revision="jb2" />
   <project path="external/oprofile" name="platform/external/oprofile" revision="master" />
   <project path="external/elfutils" name="android_external_elfutils" remote="cmdev" revision="cm-10.1-linaro" />
   <project path="external/ppp" name="platform/external/ppp" revision="master" />
@@ -118,7 +118,7 @@
 
   <!-- local device/vendor/kernel -->
   <project path="device/lge/mako" name="ExtinctionLevelEvent/android_device_lge_mako" remote="gh" revision="ele" />
-  <project path="kernel/lge/mako-linaro" name="trailblazerz/lge-kernel-mako" remote="gh" revision="linaro-10.1" />
+  <project path="kernel/lge/mako" name="trailblazerz/lge-kernel-mako" remote="gh" revision="linaro-10.1" />
   <project path="vendor/lge/mako" name="ExtinctionLevelEvent/android_vendor_lge_mako" remote="gh" revision="ele" />
   <project path="vendor/broadcom" name="TheMuppets/proprietary_vendor_broadcom" remote="gh" revision="cm-10.1" />
   <project path="vendor/elan" name="TheMuppets/proprietary_vendor_elan" remote="gh" revision="cm-10.1" />
@@ -138,16 +138,15 @@
   <project path="hardware/qcom/audio-caf" name="CyanogenMod/android_hardware_qcom_audio-caf" remote="gh" revision="cm-10.1" />
   <project path="hardware/qcom/bt" name="CyanogenMod/android_hardware_qcom_bt" remote="gh" revision="cm-10.1" />
   <project path="hardware/qcom/camera" name="CyanogenMod/android_hardware_qcom_camera" remote="gh" revision="cm-10.1" />
-  <project path="hardware/qcom/display" name="CyanogenMod/android_hardware_qcom_display" remote="gh" revision="cm-10.1" />
   <project path="hardware/qcom/display-caf" name="CyanogenMod/android_hardware_qcom_display-caf" remote="gh" revision="cm-10.1" />
   <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" remote="gh" revision="cm-10.1" />
   <project path="hardware/qcom/keymaster" name="CyanogenMod/android_hardware_qcom_keymaster" remote="gh" revision="cm-10.1" />
-  <project path="hardware/qcom/media" name="CyanogenMod/android_hardware_qcom_media" remote="gh" revision="cm-10.1" />
+  <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="cr" revision="jb2" />
   <project path="hardware/qcom/msm8960" name="CyanogenMod/android_hardware_qcom_msm8960" remote="gh" revision="cm-10.1" />
   <project path="hardware/qcom/power" name="CyanogenMod/android_hardware_qcom_power" remote="gh" revision="cm-10.1" />
   <project path="hardware/qcom/sensors" name="CyanogenMod/android_hardware_qcom_sensors" remote="gh" revision="cm-10.1" />
   <project path="hardware/qcom/wlan" name="CyanogenMod/android_hardware_qcom_wlan" remote="gh" revision="cm-10.1" />
-  <project path="hardware/qcom/display" name="DroidTh3ory/android_hardware_qcom_display" remote="gh" revision="killrom" />
+  <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="cr" revision="jb2" />
 
   <!-- note2 projects -->
   <project path="device/samsung/t0lte" name="ExtinctionLevelEvent/android_device_samsung_t0lte" remote="gh" revision="ele" />
@@ -155,10 +154,11 @@
   <project path="kernel/samsung/smdk4412" name="android_kernel_samsung_smdk4412" remote="cr" revision="jb2" />
   <project path="hardware/samsung_slsi/exynos5" name="android_hardware_samsung_slsi_exynos5" remote="cm" revision="cm-10.1" />
   <project path="hardware/samsung" name="android_hardware_samsung" remote="cm" revision="cm-10.1" />
-  <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="cr" revision="jb2" />
+  <project path="vendor/samsung" name="ExtinctionLevelEvent/proprietary_vendor_samsung" remote="gh" revision="ele" />
   
-<!-- toro projects -->
+<!-- gnex projects -->
   <project path="device/samsung/toro" name="ExtinctionLevelEvent/android_device_samsung_toro" remote="gh" revision="ele" />
+  <project path="device/samsung/maguro" name="ExtinctionLevelEvent/android_device_samsung_maguro" remote="gh" revision="ele" />
   <project path="device/samsung/tuna" name="ExtinctionLevelEvent/android_device_samsung_tuna" remote="gh" revision="ele" />
   <project path="kernel/samsung/tuna" name="kernel/omap" remote="aosp" revision="android-omap-tuna-3.0-jb-mr1.1" />
   <project path="kernel/samsung/tuna" name="CyanogenMod/android_kernel_samsung_tuna" remote="gh" revision="cm-10.1" />
