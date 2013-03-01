@@ -159,7 +159,6 @@
   <project path="device/samsung/toro" name="ExtinctionLevelEvent/android_device_samsung_toro" remote="gh" revision="ele" />
   <project path="device/samsung/maguro" name="ExtinctionLevelEvent/android_device_samsung_maguro" remote="gh" revision="ele" />
   <project path="device/samsung/tuna" name="ExtinctionLevelEvent/android_device_samsung_tuna" remote="gh" revision="ele" />
-  <project path="kernel/samsung/tuna" name="kernel/omap" remote="aosp" revision="android-omap-tuna-3.0-jb-mr1.1" />
   <project path="kernel/samsung/tuna" name="CyanogenMod/android_kernel_samsung_tuna" remote="gh" revision="cm-10.1" />
   
   
