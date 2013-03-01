@@ -129,7 +129,6 @@
   <project path="vendor/event/ele" name="ExtinctionLevelEvent/vendor_event_ele" remote="gh" revision="ele" />
   <project path="vendor/nvidia" name="eos/platform/vendor/nvidia" remote="eos" revision="jellybean-4.2" />
 
-  <!-- omapzoom projects -->
   <project path="external/wpa_supplicant_8_ti" name="platform/external/wpa_supplicant_8_ti" remote="omapzoom" revision="p-jb-mr1-release" />
 
   <project path="external/qrngd" name="CyanogenMod/android_external_qrngd" remote="gh" revision="cm-10.1" />
@@ -164,12 +163,6 @@
   
   <project path="hardware/broadcom/wlan" name="CyanogenMod/android_hardware_broadcom_wlan" remote="gh" revision="cm-10.1" />
   <project path="hardware/invensense" name="CyanogenMod/android_hardware_invensense" remote="gh" revision="cm-10.1" />
-  <project path="external/iw" name="eos/platform/external/iw" remote="eos" revision="jellybean-4.2" />
-  <project path="external/iwmulticall" name="eos/platform/external/iwmulticall" remote="eos" revision="jellybean-4.2" />
-  <project path="external/libnl" name="eos/platform/external/libnl" remote="eos" revision="jellybean-4.2" />
-  <project path="external/ncurses" name="eos/platform/external/ncurses" remote="eos" revision="jellybean-4.2" />
-  <project path="external/ntfs-3g" name="eos/platform/external/ntfs-3g" remote="eos" revision="jellybean-4.2" />
-  <project path="external/powertop" name="eos/platform/external/powertop" remote="eos" revision="jellybean-4.2" />
 
   
 <!-- themes --> 
