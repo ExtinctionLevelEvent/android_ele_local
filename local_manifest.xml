@@ -20,7 +20,7 @@
   <remote  name="ls"
            fetch="git://github.com/LiquidSmooth/" />
 
-  <!-- <remove-project name="device/asus/grouper" />
+  remove-project name="device/asus/grouper" />
   <remove-project name="device/lge/mako" />
   <remove-project name="device/samsung/maguro" />
   <remove-project name="device/samsung/toro" />
